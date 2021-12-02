@@ -1,0 +1,77 @@
+h2 {
+  margin: auto;
+  text-align: center;
+  color: #ef7772;
+  font-family: 'Brandon Grotesque', sans-serif;
+  letter-spacing: 1.5px;
+}
+
+div {
+  width: 58%;
+  margin: auto;
+  margin-top: 25px;
+}
+
+label {
+  color: #2b2b2b;
+  padding-left: 15px;
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-weight: 600;
+  font-size: normal;
+  letter-spacing: 1px;
+}
+
+input {
+  width: 100%;
+  height: 60px;
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-size: large;
+  font-weight: 600;
+  padding: 20px;
+  margin-top: 5px;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  border: 2px solid #cfd4d4;
+}
+
+select {
+  width: 100%;
+  height: 60px;
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-size: large;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 2px solid #cfd4d4;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.submitButton {
+  width: 25%;
+  height: 50px;
+  margin: auto;
+  text-align: center;
+  border-radius: 60px;
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-size: large;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  background-color: #ec5d57;
+  color: white;
+  border: none;
+}
+
+.submit {
+  text-align: right;
+}
+
+input::placeholder {
+  color: #a1a1a1;
+  font-family: AtlasGrotesk, sans-serif;
+  font-weight: medium;
+}
+
+select:last-child {
+  background-color: #f3f3f3;
+  color: #2b2b2b;
+}
