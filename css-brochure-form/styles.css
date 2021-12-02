@@ -1,3 +1,8 @@
+body {
+  width: 40%;
+  margin: auto;
+}
+
 h2 {
   margin: auto;
   text-align: center;
@@ -7,8 +12,6 @@ h2 {
 }
 
 .form-box {
-  width: 58%;
-  margin: auto;
   margin-top: 25px;
 }
 
