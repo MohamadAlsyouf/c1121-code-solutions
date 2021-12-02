@@ -6,7 +6,7 @@ h2 {
   letter-spacing: 1.5px;
 }
 
-div {
+.form-box {
   width: 58%;
   margin: auto;
   margin-top: 25px;
@@ -19,6 +19,7 @@ label {
   font-weight: 600;
   font-size: normal;
   letter-spacing: 1px;
+  display: block;
 }
 
 input {
