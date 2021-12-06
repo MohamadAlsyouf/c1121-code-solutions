@@ -1,0 +1,15 @@
+var fullName = 'Mohamad Alsyouf';
+var isCool = true;
+var totalPets = 0;
+console.log('Full Name:', fullName);
+console.log('Is Cool:', isCool);
+console.log('Total Pets:', totalPets);
+console.log('Type:', typeof fullName);
+console.log('Type:', typeof isCool);
+console.log('Type:', typeof totalPets);
+var unknown = null;
+console.log('Value of unknown:', unknown);
+console.log('typeOf unknown:', typeof unknown);
+var never;
+console.log('Value of never:', never);
+console.log('typeOf never:', typeof never);
