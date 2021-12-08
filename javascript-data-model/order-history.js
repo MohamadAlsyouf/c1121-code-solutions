@@ -2,124 +2,109 @@ var orderHistory = [
   {
     items: [
       {
-        item: 'JavaScript for impatient programmers',
-        author: 'Rauschmayer, Dr. Axel'
+        type: 'book',
+        title: 'JavaScript for impatient programmers',
+        author: 'Rauschmayer, Dr. Axel',
+        subtotal: 31.55,
+        img: 'images/javaScript.png',
+        reviewed: false,
+        productSupport: false,
+        buyAgain: false,
+        viewItem: false
       }
     ],
-    itemImage: '',
     orderId: '114-3941689-8772232',
     orderDetails: '<a>Order Details</a>',
     invoice: '<a>Invoice</a>',
-    orderDate: 'August 4, 2020',
-    deliverDate: 'Aug 8, 2020',
+    orderDate: 'August 8, 2020',
+    deliverDate: 'Sep 7, 2020',
     deliveredDirectly: false,
-    subTotal: 31.55,
-    total: 34,
+    total: 34.00,
     shipTo: 'JS Masher',
-    reviewed: false,
-    returnWindow: false,
-    buyAgain: false,
-    viewItem: false,
-    productSupport: false
+    returnBy: 'Aug 19, 2020'
   },
 
   {
     items: [
       {
-        item: 'The Timeless Way of Building',
-        author: 'Alaxander, Christopher'
+        type: 'book',
+        title: 'The Timeless Way of Building',
+        author: 'Alexander, Christopher',
+        subtotal: 41.33,
+        img: 'images/timelessWay.png',
+        reviewed: false,
+        productSupport: false,
+        buyAgain: false,
+        viewItem: false
       }
     ],
-    itemImage: '',
     orderId: '113-9984268-1280257',
     orderDetails: '<a>Order Details</a>',
     invoice: '<a>Invoice</a>',
-    orderDate: 'July 19, 2020',
-    deliverDate: 'Jul 20, 2020',
+    orderDate: 'July 4, 2020',
+    deliverDate: 'Jul 7, 2020',
     deliveredDirectly: true,
-    subTotal: 41.33,
     total: 44.53,
     shipTo: 'JS Masher',
-    reviewed: false,
-    returnWindow: false,
-    buyAgain: false,
-    viewItem: false,
-    productSupport: false
+    returnBy: 'Aug 19, 2020'
   },
 
   {
-    items: 'Gamecube Controller Adapter',
-    itemImage: '',
+    items: [
+      {
+        type: 'hardware',
+        item: 'GameCube Controller Adapter',
+        subtotal: 15.98,
+        img: 'images/controllerAdapter.png',
+        reviewed: false,
+        productSupport: false,
+        buyAgain: false,
+        viewItem: false
+      }
+    ],
     orderId: '114-2875557-9059409',
     orderDetails: '<a>Order Details</a>',
     invoice: '<a>Invoice</a>',
     orderDate: 'July 4, 2020',
     deliverDate: 'Jul 7, 2020',
     deliveredDirectly: true,
-    subTotal: 15.98,
     total: 17.22,
     shipTo: 'JS Masher',
-    reviewed: false,
-    returnWindow: false,
-    buyAgain: false,
-    viewItem: false,
-    productSupport: false
+    returnBy: 'Aug 5, 2020'
   },
 
   {
     items: [
       {
-        item1: 'GameCube Controller'
+        type: 'hardware',
+        item: 'GameCube Controller',
+        subtotal: 94.95,
+        img: 'images/gameCubeController',
+        reviewed: false,
+        productSupport: true,
+        buyAgain: false,
+        viewItem: false
       },
       {
-        item2: 'The Art of Sql',
-        author: 'Faroult, Stephane'
+        type: 'book',
+        title: 'The Art of Sql',
+        author: 'Faroult, Stephane',
+        subtotal: 33.99,
+        img: 'images/theArtOfSql.png',
+        reviewed: true,
+        buyAgain: false,
+        viewItem: false,
+        productSupport: false
       }
     ],
-    itemImage: ['img1', 'img2'],
     orderId: '113-2883177-2648248',
     orderDetails: '<a>Order Details</a>',
     invoice: '<a>Invoice</a>',
     orderDate: 'July 3, 2020',
     deliverDate: 'Jul 5, 2020',
     deliveredDirectly: false,
-    subTotal: [
-      {
-        item1: 94.95,
-        item2: 33.99
-      }
-    ],
     total: 138.93,
     shipTo: 'JS Masher',
-    reviewed: [
-      {
-        item1: false,
-        item2: true
-      }
-    ],
-    returnWindow: [
-      {
-        item1: false,
-        item2: false
-      }
-    ],
-    buyAgain: [
-      {
-        item1: false,
-        item2: false
-      }
-    ],
-    viewItem: [
-      {
-        item1: false,
-        item2: false
-      }
-    ],
-    productSupport: [
-      {
-        item1: true,
-        item2: false
-      }
-    ]
+    returnBy: 'Aug 4, 2020'
   }
 ];
