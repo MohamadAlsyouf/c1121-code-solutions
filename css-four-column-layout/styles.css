@@ -1,0 +1,48 @@
+* {
+  font-family: Barlow, sans-serif;
+  background-color: #f7f8fa;
+}
+
+div > p {
+  margin-top: 30px;
+  font-weight: 500;
+}
+
+div > h3 {
+  font-weight: 800;
+}
+
+.header {
+  font-weight: black 900;
+}
+
+.container {
+  width: 1000px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.column-full {
+  flex-basis: 100%;
+}
+
+.column-fourth {
+  flex-basis: 25%;
+}
+
+.center-stuff {
+  text-align: center;
+  justify-content: center;
+}
+
+.img {
+  height: 500px;
+}
+
+.small-img {
+  width: 100px;
+  height: 100px;
+}
