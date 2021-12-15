@@ -6,6 +6,7 @@ function handleSubmit(event) {
   var message = $formElements.elements.message.value;
   console.log({ name, email, message });
   event.preventDefault();
+  $formElements.reset();
 }
 
 var $contactForm = document.querySelector('#contact-form');
