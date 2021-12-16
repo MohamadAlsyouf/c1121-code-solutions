@@ -1,0 +1,35 @@
+.bG {
+  background-color: #111;
+}
+
+.cream {
+  background-color: #fef9f1;
+}
+
+.container {
+  height: 900px;
+  margin: auto;
+  display: flex;
+}
+
+.bulb-button-off {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px;
+  background-color: #222224;
+  box-shadow: 0 -10px 1px 10px #0c0c0c;
+}
+
+.bulb-button-on {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #faea84;
+  box-shadow: 0 0 10px 10px #fdf0ac;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
