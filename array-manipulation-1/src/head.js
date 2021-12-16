@@ -3,7 +3,6 @@
 // get the first element of array and store it
 // give back location of first element stored
 function head(array) {
-  var firstIndex = [];
-  firstIndex = array[0];
+  var firstIndex = array[0];
   return firstIndex;
 }

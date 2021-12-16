@@ -3,7 +3,6 @@
 // get last element of array and store it
 // give back location of storage for last element
 function last(array) {
-  var lastIndex = [];
-  lastIndex = array[array.length - 1];
+  var lastIndex = array[array.length - 1];
   return lastIndex;
 }
