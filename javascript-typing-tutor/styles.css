@@ -1,0 +1,64 @@
+body {
+  background-color: seashell;
+}
+
+.center-stuff {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100vh;
+  height: 100vh;
+  margin: auto;
+}
+
+.letter-line {
+  width: 100%;
+  text-align: center;
+  font-family: "Ubuntu Mono", sans-serif;
+  font-size: xxx-large;
+}
+
+.current-letter {
+  padding-bottom: 10px;
+  border-bottom: 4px solid black;
+}
+
+.green-letter {
+  color: #18cd1b;
+  padding-bottom: 10px;
+  border: none;
+}
+
+.red-letter {
+  color: red;
+  padding-bottom: 10px;
+  border-bottom: 4px solid red;
+}
+
+.modal-off {
+  display: none;
+}
+
+.modal-on {
+  position: fixed;
+  font-family: "Ubuntu Mono", sans-serif;
+  background-color: rgb(219, 171, 179);
+  border-radius: 5px;
+  border: 5px solid;
+  text-align: center;
+  width: 25%;
+  height: 15%;
+}
+
+.play {
+  background-color: seashell;
+  box-shadow: 2px 3px 2px black;
+  font-family: "Ubuntu Mono", sans-serif;
+  font-size: 20px;
+  width: 125px;
+  height: 45px;
+  cursor: pointer;
+}
