@@ -3,9 +3,10 @@ var $modal = document.querySelector('.modal-off');
 var $noButton = document.querySelector('.no-button');
 
 function handleClick(event) {
-  $modal.className = 'modal-on';
   if (event.target === $noButton) {
     $modal.className = 'modal-off';
+  } else {
+    $modal.className = 'modal-on';
   }
 }
 
