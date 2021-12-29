@@ -6,12 +6,8 @@ function countDown() {
   $heading.textContent = currentNum;
   if (currentNum < 1) {
     $heading.textContent = '~Earth Beeeelooowww Us~';
-    stopCountDown(intervalID);
+    clearInterval(intervalID);
   }
 }
 
 var intervalID = setInterval(countDown, 1000);
-
-function stopCountDown(intervalID) {
-  clearInterval(intervalID);
-}
