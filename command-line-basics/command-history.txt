@@ -1,0 +1,280 @@
+    1  git config --global user.name "Mohamad Alsyouf"
+    2  git config --global user.email "mohamadalsyouf99@gmail.com"
+    3  git config --global --list
+    4  cd ~/repos/ajax-project
+    5  git status
+    6  http https://tastedive.com/api/similar?k=429885-Bootcamp-CY4UKJN5&limit=10 type=music info=1 q='erik satie'
+    7  clear
+    8  http https://tastedive.com/api/similar?k=429885-Bootcamp-CY4UKJN5 limit=10 type=music info=1 q='erik satie'
+    9  http https://tastedive.com/api/similar?k==429885-Bootcamp-CY4UKJN5 limit==10 type==music info==1 q='erik satie'
+   10  http https://tastedive.com/api/similar limit==10 type==music info==1 q='erik satie'
+   11  http https://tastedive.com/api/similar info==1 q='erik satie'
+   12  http https://tastedive.com/api/similar q='erik satie'
+   13  http https://tastedive.com/api/similar? q='erik satie'
+   14  http https://tastedive.com/api/similar?q='vacations'
+   15  http https://tastedive.com/api/similar?q='erik satie'
+   16  http https://tastedive.com/api/similar?q='erik satie' info==1
+   17  git status
+   18  git add css
+   19  git add index.html
+   20  git add js
+   21  git status
+   22  git commit -m "make sure each object that is returned has a YouTube URL. Do NOT include if 'yUrl: null'. Check if the new array contains 6 objects, if so, stop the loop"
+   23  git push origin issue-2-user-can-view-list-of-artists
+   24  git status
+   25  git commit -m "Create a function for appending the newly created DOM elements to the page."
+   26  git push origin issue-2-user-can-view-list-of-artists
+   27  git commit -m "Remove the example HTML results once the user's search results are successfully being appended to the DOM on page load."
+   28  git push origin issue-2-user-can-view-list-of-artists
+   29  git status
+   30  git add css
+   31  git add js
+   32  git add index.html
+   33  git status
+   34  git commit -m "Make nav bar logo swap views to genres home page"
+   35  git push origin issue-2-user-can-view-list-of-artists
+   36  git status
+   37  git switch master
+   38  git add css
+   39  git add index.html
+   40  git add js
+   41  git status
+   42  git switch master
+   43  cd ~/repos/ajax-project
+   44  git switch master
+   45  git commit -m " Make nav bar logo swap views to genres home page"
+   46  git pull origin issue-2-user-can-view-list-of-artists
+   47  git switch master
+   48  git status
+   49  git pull origin master
+   50  git branch issue-3-user-can-add-artists
+   51  git switch issue-3-user-can-add-artists
+   52  git status
+   53  git pull origin master
+   54  git status
+   55  git add css
+   56  git add index.htnk
+   57  git add index.html
+   58  git add js
+   59  git status
+   60  git commit -m "Add a '+' icon next to each similar artists name."
+   61  git push origin issue-3-user-can-add-artists
+   62  git status
+   63  git add css
+   64  git commit -m "Change the '+' icon to a darker orange when hovered."
+   65  git push origin issue-3-user-can-add-artists
+   66  git status
+   67  cd ~/repos/c1121-code-solutions
+   68  git status
+   69  git add string-manipulation-2
+   70  git status
+   71  git commit -m "Completed string manipulation 2"
+   72  cd ~/repos/week-project
+   73  cd ~/repos/week-planner
+   74  git status
+   75  git add .
+   76  git commit -m "spaced the day boxes" --no-verify
+   77  git push origin master
+   78  git pull origin master
+   79  git rebase origin/master
+   80  git status
+   81  git push origin master
+   82  git status
+   83  git pull origin master
+   84  git status
+   85  git add .
+   86  git commit -m "done...for now" --no-verify
+   87  git push origin master
+   88  cd ~/repos/c1121-code-solutions
+   89  git status
+   90  git add .
+   91  git status
+   92  git restore --staged javascript-bank javascript-carousel object-manipulation-2 test
+   93  git status
+   94  git commit -m "Completed array manipulation 2"
+   95  git push origin array-manipulation-2
+   96  git switch master
+   97  git pull origin string-manipulation-2
+   98  git switch string-manipulation-2
+   99  git status
+  100  git add string-manipulation-2
+  101  git status
+  102  git commit -m "Revised Completed String Manipulation 2"
+  103  git push origin string-manipulation-2
+  104  git switch master
+  105  git switch object-manipulation-2
+  106  git branch object-manipulation-2
+  107  git switch object-manipulation-2
+  108  git status
+  109  cd ~/repos/ajax-project
+  110  git status
+  111  git add css
+  112  git commit -m "Change the '+' icon's color to white when user clicks on it"
+  113  git push origin issue-3-user-can-add-artists
+  114  git status
+  115  git add css
+  116  git add index.html
+  117  git add js
+  118  git status
+  119  git commit -m "call swapView function when pressing app logo and genre box"
+  120  git push origin issue-3-user-can-add-artists
+  121  git status
+  122  git add js
+  123  git status
+  124  git commit -m "Revise view swapping function to utilize any view"
+  125  git push origin issue-3-user-can-add-artists
+  126  git status
+  127  git add index.hml
+  128  git add js
+  129  git status
+  130  git add index.html
+  131  git status
+  132  git commit -m "Ensure that each artist within data.artists has its own artist ID"
+  133  git push origin issue-3-user-can-add-artists
+  134  git status
+  135  git add js
+  136  git status
+  137  git commit -m "remove the DOM and data object of the selected artist from the current view on icon click"
+  138  git push origin issue-3-user-can-add-artists
+  139  git status
+  140  git add js
+  141  git commit -m "store the liked artist into data.likedArtists"
+  142  git push origin issue-3-user-can-add-artists
+  143  git status
+  144  git add js
+  145  git status
+  146  git switch master
+  147  git status
+  148  git add css
+  149  git commit -m "cleaned up feature 3"
+  150  git push origin issue-3-user-can-add-artists
+  151  git status
+  152  git switch master
+  153  git pull origin master
+  154  git status
+  155  git branch issue-4-user-can-view-liked-artists
+  156  git switch issue-4-user-can-view-liked-artists
+  157  git pull origin master
+  158  git switch master
+  159  git switch issue-3-user-can-add-artists
+  160  git status
+  161  git switch master
+  162  git pull origin master
+  163  git switch issue-3-user-can-add-artists
+  164  git switch master
+  165  git status
+  166  cd ~/repos/c1121-code-solutions
+  167  git status
+  168  git add object-manipulation-2
+  169  git status
+  170  git commit -m "Completed object manipulation 2"
+  171  git push origin object-manipulation-2
+  172  git status
+  173  git switch master
+  174  cd ~/repos/ajax-project
+  175  git switch issue-3-user-can-add-artists
+  176  git status
+  177  cd ~/repos/c1121-code-solutions
+  178  git status
+  179  git branch es6-const-let
+  180  git switch es6-const-let
+  181  git status
+  182  git add es6-const-let
+  183  git status
+  184  git commit -m "Completed es6 const let exercise"
+  185  cd ~/repos/c1121-code-solutions
+  186  git status
+  187  git commit -m "Completed es6 arrow functions exercise"
+  188  git push origin es6-arrow-functions
+  189  git status
+  190  git switch master
+  191  git status
+  192  git switch es6-arrow-functions
+  193  git status
+  194  git add es6-arrow-functions
+  195  git statuys
+  196  git status
+  197  git commit -m "Completed es6 arrow functions exercise"
+  198  git push origin es6-arrow-functions
+  199  git switch master
+  200  git status
+  201  git branch command-line-basics
+  202  git switch command-line-basics
+  203  cd command-line-basics
+  204  pwd
+  205  man man
+  206  man
+  207  man man
+  208  man cat
+  209  cat laziness.txt
+  210  cat impatience.txt
+  211  cat hubris.txt
+  212  cat laziness.txt impatience.txt hubris.txt
+  213  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  214  cat three-virtues.txt
+  215  man ls
+  216  ls
+  217  ls -a
+  218  ls -f
+  219  man ls
+  220  ls lfz-staff
+  221  ls -a lfz-staff
+  222  ls -F lfz-staff
+  223  ls -aF lfz-staff > lfz-staff/contents.txt
+  224  cat lfz-staff/contents.txt
+  225  man pwd
+  226  pwd
+  227  pwd > i-was-here.txt
+  228  ls
+  229  cat i-was-here.txt
+  230  man echo
+  231  echo 'Hello, World!' > hello.txt
+  232  ls
+  233  cat hello.txt
+  234  man touch
+  235  touch tag-youre-it.txt
+  236  touch boop.txt > snoot/
+  237  ls snoot/
+  238  ls snoot
+  239  touch boop.txt > snoot
+  240  ls snoot
+  241  ls > snoot
+  242  ls snoot/boop.txt
+  243  ls snoot/
+  244  ls
+  245  ls snoot
+  246  man touch
+  247  ls -a snoot
+  248  man ls
+  249  ls -a
+  250  ls -a > snoot
+  251  touch snoot/boop.txt
+  252  ls snoot
+  253  man mkdir
+  254  mkdir parent
+  255  ls
+  256  man mkdir
+  257  mkdir -p parent/child/grandchild
+  258  ls
+  259  touch parent/child/grandchild/.gitkeep
+  260  ls -a
+  261  ls -a parent
+  262  ls -a parent/child/grandchild
+  263  man mv
+  264  mv pokiemans pokemon
+  265  ls
+  266  man rm
+  267  rm lol.txt
+  268  ls
+  269  ls kill-me
+  270  rm -r kill-me
+  271  ls
+  272  man cp
+  273  ls -a
+  274  cp and-then.txt no-and-then.txt
+  275  ls
+  276  cat and-then.txt
+  277  cat no-and-then.txt
+  278  man history
+  279  history
+  280  history > command-history.txt
