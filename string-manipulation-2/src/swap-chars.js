@@ -10,11 +10,7 @@ function swapChars(firstIndex, secondIndex, string) {
   var newString = string.split('');
   var indexOne = newString[firstIndex];
   var indexTwo = newString[secondIndex];
-  for (var i = 0; i < string.length; i++) {
-    if (string[i] === string[firstIndex]) {
-      newString[firstIndex] = indexTwo;
-      newString[secondIndex] = indexOne;
-    }
-  }
+  newString[firstIndex] = indexTwo;
+  newString[secondIndex] = indexOne;
   return newString.join('');
 }
