@@ -1,8 +1,10 @@
 const express = require('express');
 const app = express();
 
+const html = '<h1>meow meow meow!</h1>';
+
 app.use((req, res) => {
-  res.send('meow');
+  res.send(html);
 });
 
 app.listen(3000, () => {
