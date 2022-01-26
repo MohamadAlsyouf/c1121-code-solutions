@@ -67,17 +67,16 @@ app.delete('/api/notes/:id', (req, res) => {
   } else {
     notes[id] = toDelete;
     delete notes[id];
+    const updatedNotes = JSON.stringify(newObject, null, 2);
+    fs.writeFile('data.json', updatedNotes, err => {
+      if (err) {
+        console.error(err);
+        res.status(500).json({ error: 'An unexpected error occured' });
+      } else {
+        res.sendStatus(204);
+      }
+    });
   }
-
-  const updatedNotes = JSON.stringify(newObject, null, 2);
-  fs.writeFile('data.json', updatedNotes, err => {
-    if (err) {
-      console.error(err);
-      res.status(500).json({ error: 'An unexpected error occured' });
-    } else {
-      res.sendStatus(204);
-    }
-  });
 });
 
 // ft.4 client can replace a note (PUT) by id
