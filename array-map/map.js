@@ -7,9 +7,7 @@ function map(array, transform) {
   // return the new array
   const outputArray = [];
   for (let i = 0; i < outputArray.length; i++) {
-    if (transform(array[i])) {
-      outputArray.push(array[i]);
-    }
+    outputArray.push(transform(array[i]));
   }
   return outputArray;
 }
