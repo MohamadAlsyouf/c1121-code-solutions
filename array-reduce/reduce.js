@@ -1,11 +1,12 @@
 function reduce(array, combine, initialValue) {
-  let index = 0;
   let finalValue = initialValue;
-  if (arguments.length === 2) {
-    index = 1;
+  let i = 0;
+  if (arguments.length < 3) {
     finalValue = array[0];
+    i = 1;
   }
-  for (; index < array.length; index++) {
-    // finalValue = combine(finalValue, ?);
+  for (; i < array.length; i++) {
+    finalValue = combine(finalValue, array[i]);
   }
+  return finalValue;
 }
