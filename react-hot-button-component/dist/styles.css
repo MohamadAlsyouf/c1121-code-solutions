@@ -1,0 +1,33 @@
+button {
+  font-size: 2rem;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+.coldest {
+  background-color: #351c75;
+}
+
+.colder {
+  background-color: #674ea7;
+}
+
+.warm {
+  background-color: #e06666;
+}
+
+.warmer {
+  background-color: #f6b26b;
+  color: black;
+}
+
+.warmest {
+  background-color: #ff0;
+  color: black;
+}
+
+.hot {
+  background-color: white;
+  color: black;
+}
