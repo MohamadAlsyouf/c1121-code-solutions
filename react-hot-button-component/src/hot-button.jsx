@@ -20,22 +20,22 @@ class HotButton extends React.Component {
       button = <button className={className} onClick={this.handleClick}>Hot Button!</button>;
     } else if (clickCount < 6) {
       className += ' coldest';
-      button = <button className={className} onClick={this.handleClick}>Hot Button!</button>;
+      button = <button onClick={this.handleClick}>Hot Button!</button>;
     } else if (clickCount < 9) {
       className += ' colder';
-      button = <button className={className} onClick={this.handleClick}>Hot Button!</button>;
+      button = <button onClick={this.handleClick}>Hot Button!</button>;
     } else if (clickCount < 12) {
       className += ' warm';
-      button = <button className={className} onClick={this.handleClick}>Hot Button!</button>;
+      button = <button onClick={this.handleClick}>Hot Button!</button>;
     } else if (clickCount < 15) {
       className += ' warmer';
-      button = <button className={className} onClick={this.handleClick}>Hot Button!</button>;
+      button = <button onClick={this.handleClick}>Hot Button!</button>;
     } else if (clickCount < 18) {
       className += ' warmest';
-      button = <button className={className} onClick={this.handleClick}>Hot Button!</button>;
+      button = <button onClick={this.handleClick}>Hot Button!</button>;
     } else {
       className += ' hot';
-      button = <button className={className} onClick={this.handleClick}>Hot Button!</button>;
+      button = <button onClick={this.handleClick}>Hot Button!</button>;
     }
     return (
       <>
