@@ -1,0 +1,41 @@
+span {
+  margin-left: 20px;
+  font-family: cursive;
+}
+
+.on {
+  background-color: #6aa84f;
+}
+
+.off {
+  background-color: darkred;
+}
+
+.toggle-switch {
+  border: 1px solid purple;
+  height: 2rem;
+  width: 5rem;
+  border-radius: 1rem;
+}
+
+.knob-on {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  background: #666;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  transition: margin-right 0.5s ease-out;
+  left: 3rem;
+}
+
+.knob-off {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  background: #666;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  transition: margin-left 0.5s ease-out;
+  left: 0;
+}
