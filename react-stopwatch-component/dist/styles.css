@@ -1,0 +1,29 @@
+#root {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.circle {
+  border-radius: 50%;
+  border: 2px solid black;
+  height: 200px;
+  width: 200px;
+  text-align: center;
+}
+
+.time {
+  padding-top: 3.5rem;
+  font-size: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-play::before {
+  justify-content: center;
+  margin-top: 5rem;
+  display: block;
+  font-size: 40px;
+  cursor: pointer;
+}
