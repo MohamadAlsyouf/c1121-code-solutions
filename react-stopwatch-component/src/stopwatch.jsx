@@ -31,7 +31,7 @@ class StopWatch extends React.Component {
       this.setState({ seconds: this.state.seconds + 1 });
     } else {
       clearInterval(tick);
-      this.setState({ seconds: this.state.seconds + 1 });
+      this.setState({ seconds: 0 });
     }
   }
 
