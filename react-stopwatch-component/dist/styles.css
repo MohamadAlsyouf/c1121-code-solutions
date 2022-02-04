@@ -1,7 +1,8 @@
+
 #root {
   height: 50%;
+  flex-direction: column;
   display: flex;
-  justify-content: center;
 }
 
 .circle {
@@ -9,30 +10,24 @@
   border: 2px solid black;
   height: 200px;
   width: 200px;
-  text-align: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 15px;
 }
 
 .time {
   padding-top: 3.5rem;
   font-size: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .fa-play::before {
-  justify-content: center;
-  margin-top: 5rem;
-  margin-right: 1rem;
-  display: block;
+  margin-left: 5.5rem;
   font-size: 40px;
   cursor: pointer;
 }
 
 .fa-pause::before {
-  justify-content: center;
-  margin-top: 5rem;
-  display: block;
+  margin-left: 5.5rem;
   font-size: 40px;
   cursor: pointer;
 }

@@ -45,21 +45,21 @@ class StopWatch extends React.Component {
     const isRunning = this.state.isRunning;
     const seconds = this.state.seconds;
     let icon;
-    let tweet;
+
     if (!isRunning) {
       icon = <i onClick={this.handleClick} className="fas fa-play"></i>;
-      tweet = <span className='tweet'>bird&apos;s the word oh well-a bird bird bird</span>;
     } else {
       icon = <i onClick={this.handlePause} className="fas fa-pause"></i>;
     }
 
     return (
       <>
-      <div onClick={this.reset} className='circle'>
-        <span className='time'>{seconds}</span>
-      </div>
-      {icon}
-      {tweet}
+        <div onClick={this.reset} className='circle'>
+          <span className='time'>{seconds}</span>
+        </div>
+        <div>
+          {icon}
+        </div>
       </>
     );
   }
