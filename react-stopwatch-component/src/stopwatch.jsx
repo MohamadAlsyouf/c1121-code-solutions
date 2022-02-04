@@ -4,48 +4,62 @@ class StopWatch extends React.Component {
   constructor(props) {
     super(props);
     this.state = ({ isRunning: false, seconds: 0 });
+
     this.handleClick = this.handleClick.bind(this);
-    this.timer = this.timer.bind(this);
-    this.countUp = this.timer.bind(this);
+    this.startTimer = this.startTimer.bind(this);
+    this.handlePause = this.handlePause.bind(this);
+    this.reset = this.reset.bind(this);
   }
 
   handleClick() {
-    this.setState(previousState => ({
-      isRunning: !previousState.isRunning
-    }));
+    this.setState({
+      isRunning: !this.state.isRunning
+    });
+    this.startTimer();
   }
 
-  // countUp() {
-  //   this.setState({
-  //     seconds: this.state.seconds + 1
-  //   });
-  // }
-
-  // not working!!!!! how to get the play button to initiate this?
-  timer() {
+  startTimer() {
     const { isRunning } = this.state;
-    let tick;
 
     if (!isRunning) {
-      tick = setInterval(this.countUp, 1000);
-      this.setState({ seconds: this.state.seconds + 1 });
-    } else {
-      clearInterval(tick);
-      this.setState({ seconds: 0 });
+      this.tick = setInterval(() => {
+        this.setState({ seconds: this.state.seconds + 1 });
+      }, 1000);
     }
   }
 
+  handlePause() {
+    const { isRunning } = this.state;
+    if (isRunning) {
+      clearInterval(this.tick);
+      this.setState({ isRunning: false });
+    }
+  }
+
+  reset() {
+    this.setState({ seconds: 0 });
+    clearInterval(this.tick);
+  }
+
   render() {
-    const running = this.state.running;
+    const isRunning = this.state.isRunning;
     const seconds = this.state.seconds;
-    // if statements maybe here
+    let icon;
+    let tweet;
+    if (!isRunning) {
+      icon = <i onClick={this.handleClick} className="fas fa-play"></i>;
+      tweet = <span className='tweet'>bird&apos;s the word oh well-a bird bird bird</span>;
+    } else {
+      icon = <i onClick={this.handlePause} className="fas fa-pause"></i>;
+    }
 
     return (
       <>
-        <div className='circle'>
-          <span className='time'>{seconds}</span>
-          <i onClick={this.timer} className="fas fa-play"></i>
-        </div>
+      <div onClick={this.reset} className='circle'>
+        <span className='time'>{seconds}</span>
+      </div>
+      {icon}
+      {tweet}
       </>
     );
   }

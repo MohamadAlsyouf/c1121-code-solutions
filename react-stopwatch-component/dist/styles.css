@@ -23,7 +23,20 @@
 .fa-play::before {
   justify-content: center;
   margin-top: 5rem;
+  margin-right: 1rem;
   display: block;
   font-size: 40px;
   cursor: pointer;
+}
+
+.fa-pause::before {
+  justify-content: center;
+  margin-top: 5rem;
+  display: block;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.tweet {
+  margin-top: 5.5rem;
 }
