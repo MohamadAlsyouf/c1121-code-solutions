@@ -13,29 +13,29 @@ span {
 
 .toggle-switch {
   border: 1px solid purple;
-  height: 2em;
-  width: 5em;
-  border-radius: 1em;
+  height: 2rem;
+  width: 5rem;
+  border-radius: 1rem;
 }
 
 .knob-on {
   position: relative;
-  width: 1.9em;
-  height: 1.9em;
+  width: 2rem;
+  height: 2rem;
   background: #666;
   border: 1px solid #ddd;
   border-radius: 50%;
-  transition: margin-right 0.3s ease-out;
-  left: 3em;
+  transition: margin-right 0.5s ease-out;
+  left: 3rem;
 }
 
 .knob-off {
   position: relative;
-  width: 1.9em;
-  height: 1.9em;
+  width: 2rem;
+  height: 2rem;
   background: #666;
   border: 1px solid #ddd;
   border-radius: 50%;
-  transition: margin-left 0.3s ease-out;
-  right: 3rem;
+  transition: margin-left 0.5s ease-out;
+  left: 0;
 }
