@@ -1,0 +1,35 @@
+#root {
+  font-family: cursive;
+}
+
+label {
+  display: block;
+}
+
+input {
+  margin-right: 1rem;
+  border: 1px solid black;
+  font-size: large;
+  border-radius: 5%;
+}
+
+input:focus {
+  border: 2px solid black;
+}
+
+i {
+  font-size: 26px;
+}
+
+p {
+  color: red;
+  margin: 0;
+}
+
+.fa-times {
+  color: red;
+}
+
+.fa-check {
+  color: rgb(3, 105, 3);
+}
