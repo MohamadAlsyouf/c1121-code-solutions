@@ -8,7 +8,6 @@ class App extends React.Component {
       users: [],
       isLoading: true
     };
-    this.componentDidMount = this.componentDidMount.bind(this);
   }
 
   componentDidMount() {
