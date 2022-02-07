@@ -3,11 +3,11 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-const newPath = path.join(__dirname, 'public');
-console.log(newPath);
+const publicPath = path.join(__dirname, 'public');
+console.log(publicPath);
 
-const theStatic = express.static(newPath);
-app.use(theStatic);
+const staticMiddleware = express.static(publicPath);
+app.use(staticMiddleware);
 
 app.listen(3000, () => {
   // eslint-disable-next-line no-console
