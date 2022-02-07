@@ -1,11 +1,9 @@
-const myInit = {
-  method: 'GET'
-};
+fetch('https://jsonplaceholder.typicode.com/users')
+  .then(res => res.json())
+  .then(users => console.log(users))
+  .catch(err => console.log('Fetch failed!', err));
 
-fetch('https://jsonplaceholder.typicode.com/users', myInit)
-  .then(response => response.json())
-  .then(data => console.log(data));
-
-fetch('https://pokeapi.co/api/v2/pokemon/1', myInit)
-  .then(response => response.json())
-  .then(data => console.log(data));
+fetch('https://pokeapi.co/api/v2/pokemon/1')
+  .then(res => res.json())
+  .then(data => console.log(data))
+  .catch(err => console.log('Fetch failed!', err));
