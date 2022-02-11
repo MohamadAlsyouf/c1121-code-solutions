@@ -1,0 +1,56 @@
+1. User can sign up.
+
+- The home page of the app displays the fields required for the user to sign in
+  or the option to register for an account. When the user chooses to sign-up, the handleChange
+  method of the AuthForm component updates the state which hold the values for the
+  input username and password fields. The nearest current value of the context type
+  is then used to change the view from sign-in to sign-up, displaying different text and
+  buttons/links correlating with the current context type. When the user signs up
+  providing these fields, a post request is sent to the server from the client.
+  If the user does not provide sign up info, a ClientError 400 is thrown, and handled
+  in the errorMiddleware function. If the user does provide these inputs and submits, the hash method
+  of the argon2 object "hashes" the password, then inserting the result including the hashed
+  password and the username into the database via sql creating a new row with the user information,
+  thus displaying the newly created user object, in JSON format, as well as the 201 status code
+  onto the client terminal.
+
+
+2. User can sign in.
+
+(look at handleSignIn method in app.jsx maybe)
+Since the default context type in the AuthPage component is set with the default value sign-in,
+the user can sign in by providing their username and password. As the user inputs this info,
+the handleChange method of the AuthForm component updates the state which hold the username and
+password values. If the user fails to provide this info, a 401 ClientError is thrown and handled
+by the errorMiddleware function. If the user provides login info, the database is queried to ensure
+that the info is in fact contained within the database. If the user's info does not match any
+of which is in the database, another 401 ClientError handled by the errorMiddleware function is thrown.
+Otherwise, the verify method of the argon2 object is called to ensure that the provided password
+does indeed match the hashed password stored in the database. If it is not matching, another 401 ClientError,
+if it is matching, the userId and username are stored in a payload object and passed to the sign method
+of the JSONWebToken object, which returns a token with a stamp of approval with an encrypted
+token secret stored in the env file. Then, the return of the json method of the result object being
+called with an object consisting of the token and the new payload object is shown in the client terminal.
+
+
+
+3. User can stay signed in (even if they refresh the page).
+
+Once the user is signed their JSON webtoken is passed as an argument to the getItem method of the localStorage
+property of the window object, which returns the key's value and stores in it a token variable. The route state
+of the App is then set to an empty string which returns the Home react element's DOM tree. The current
+user state of the App is then set from null to the current user's token, as well as the isAuthorizing
+state being set from true to false allowing the contents of the current hash route of '#', the home page of
+the app, to be displayed to the user, rather than the previous route of the #sign-in(auth) page. Then in the
+handleSignIn method, that tokens value is being stored within the applications local storage, thus being
+able to refresh the page, as well as navigate the application while the browser session retains their JSONWebToken
+in local storage. The user will remain signed in until they sign-out with the button on the nav bar.
+
+
+4. User can sign out.
+
+- When the user clicks the sign out button at the top right of the page, the handleSignOut method of the App
+component runs and removes the JSONWebToken, the current user, from local storage. The user state of the App
+component is then set from the user object containing the users token, back to its initial state of null. The route
+path then changes back to sign-in, returning the DOM tree rendered in the Auth which contains the React elements for that
+set page.
