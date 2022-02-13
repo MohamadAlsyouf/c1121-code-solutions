@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  justify-content: center;
+  font-family: cursive;
+}
+
+button {
+  width: 300px;
+  height: 40px;
+  background-color: rgb(186, 187, 251);
+  cursor: pointer;
+  text-align: left;
+  font-family: cursive;
+  font-size: large;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+.details {
+  height: auto;
+  width: 300px;
+  border: 2px solid black;
+}
