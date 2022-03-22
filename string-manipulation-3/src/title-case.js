@@ -3,7 +3,7 @@
 // lower case the string, separate the words into an array by ' ',
 // iterate over each word in the array
 //   if the word's length is more than 3, upper case the word
-// ........
+// ......
 
 const titleCase = title => {
   const lowerTitle = title.toLowerCase().split(' ');
