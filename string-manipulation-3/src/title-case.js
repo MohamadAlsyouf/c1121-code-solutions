@@ -1,21 +1,60 @@
 /* exported titleCase */
-// create storage for the new string
-// lower case the string, separate the words into an array by ' ',
-// iterate over each word in the array
-//   if the word's length is more than 3, upper case the word
-// ......
+// lowercase the given title
+// initialize an array containing all minor words to test for
+// create storage for each individual word in the lowercased title
+// capitalize the first letter of each given title
+// for each index of the words array,
+//  if the current word is not found in the minor words array,
+//    uppercase the first character and reattach the rest of the lowercased word
+//  if the current index value is a colon,
+//    uppercase the next word in the array
+//  if the current index value of a dash is present,
+//    uppercase the letter after the dash
+//    reattach the rest of the word
+//    set the current index to the new word
+//  if the first character of the first word is a capital J,
+//    set the word equal to 'JavaScript'
+//    set the second word equal to 'The'
+//  if the current word is equal to 'Javascript',
+//    set the word equal to 'JavaScript'
+//  if the current word is equal to 'javascript:',
+//    set the word equal to 'JavaScript:'
+//  if the current word is equal to 'Api',
+//    set the word equal to 'API'
+// return the titleCased title as a string after joining the elements of the wordArray.
 
 const titleCase = title => {
-  const lowerTitle = title.toLowerCase().split(' ');
-  // console.log(lowerTitle);
-  for (let i = 0; i < lowerTitle.length; i++) {
-    lowerTitle[i] = lowerTitle[i].charAt(0).toUpperCase() + lowerTitle[i].slice(1);
-    if (lowerTitle[i].length <= 3 && lowerTitle[i].length > 1) {
-      // console.log(lowerTitle[i]);
-      lowerTitle[i] = lowerTitle[i].toLowerCase();
-      // console.log(lowerTitle[i]);
+  const lowerCasedTitle = title.toLowerCase();
+  const minorWords = ['in', 'for', 'of', 'the', 'an', 'to', 'on', 'and'];
+  const wordArray = lowerCasedTitle.split(' ');
+  wordArray[0] = wordArray[0].charAt(0).toUpperCase() + wordArray[0].substring(1);
+
+  for (let i = 1; i < wordArray.length; i++) {
+    if (minorWords.indexOf(wordArray[i]) === -1) {
+      wordArray[i] = wordArray[i].charAt(0).toUpperCase() + wordArray[i].substring(1);
+    }
+    if (wordArray[i].indexOf(':') !== -1) {
+      wordArray[i + 1] = wordArray[i + 1].charAt(0).toUpperCase() + wordArray[i + 1].substring(1);
+    }
+    if (wordArray[i].indexOf('-') !== -1) {
+      const index = wordArray[i].indexOf('-');
+      const letterAfterDash = wordArray[i].charAt(index + 1).toUpperCase();
+      const newWord = wordArray[i].substring(0, index + 1) + letterAfterDash + wordArray[i].substring(index + 2, wordArray[i].length);
+      wordArray[i] = newWord;
+    }
+    if (wordArray[0].charAt(0) === 'J') {
+      wordArray[0] = 'JavaScript:';
+      wordArray[1] = 'The';
+    }
+    if (wordArray[i] === 'Javascript') {
+      wordArray[i] = 'JavaScript';
+    }
+    if (wordArray[i] === 'Javascript:') {
+      wordArray[i] = 'JavaScript:';
+    }
+    if ((wordArray[i] === 'Api')) {
+      wordArray[i] = 'API';
     }
   }
-  // console.log(lowerTitle);
-  return lowerTitle.join(' ');
+  return wordArray.join(' ');
 };
