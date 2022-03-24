@@ -12,9 +12,6 @@
 //    uppercase the letter after the dash
 //    reattach the rest of the word
 //    set the current index to the new word
-//  if the first character of the first word is a capital J,
-//    set the word equal to 'JavaScript'
-//    set the second word equal to 'The'
 //  if the current word is equal to 'Javascript',
 //    set the word equal to 'JavaScript'
 //  if the current word is equal to 'javascript:',
@@ -29,22 +26,18 @@ const titleCase = title => {
   const wordArray = lowerCasedTitle.split(' ');
   wordArray[0] = wordArray[0].charAt(0).toUpperCase() + wordArray[0].substring(1);
 
-  for (let i = 1; i < wordArray.length; i++) {
+  for (let i = 0; i < wordArray.length; i++) {
     if (minorWords.indexOf(wordArray[i]) === -1) {
       wordArray[i] = wordArray[i].charAt(0).toUpperCase() + wordArray[i].substring(1);
     }
-    if (wordArray[i].indexOf(':') !== -1) {
+    if (wordArray[i].includes(':')) {
       wordArray[i + 1] = wordArray[i + 1].charAt(0).toUpperCase() + wordArray[i + 1].substring(1);
     }
-    if (wordArray[i].indexOf('-') !== -1) {
+    if (wordArray[i].includes('-')) {
       const index = wordArray[i].indexOf('-');
       const letterAfterDash = wordArray[i].charAt(index + 1).toUpperCase();
       const newWord = wordArray[i].substring(0, index + 1) + letterAfterDash + wordArray[i].substring(index + 2, wordArray[i].length);
       wordArray[i] = newWord;
-    }
-    if (wordArray[0].charAt(0) === 'J') {
-      wordArray[0] = 'JavaScript:';
-      wordArray[1] = 'The';
     }
     if (wordArray[i] === 'Javascript') {
       wordArray[i] = 'JavaScript';
