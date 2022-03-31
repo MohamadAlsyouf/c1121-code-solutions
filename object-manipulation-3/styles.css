@@ -1,0 +1,10 @@
+body {
+  text-align: center;
+}
+
+.play-btn {
+  width: 5rem;
+  height: 5rem;
+  margin-top: 50vh;
+  background-color: cornflowerblue;
+}
