@@ -49,6 +49,7 @@ a {
 
 .ready-section > h2 {
   font-size: 28px;
+  font-weight: normal;
 }
 
 .ready-margin {
@@ -81,10 +82,12 @@ a {
   padding: 10px 15px;
   border-radius: 5px;
   border: 1px;
+  cursor: pointer;
 }
 
 .logo {
   width: 120px;
+  cursor: pointer;
 }
 
 .hero-img {
@@ -131,6 +134,7 @@ a {
   border: 1px;
   font-size: 18px;
   letter-spacing: 1px;
+  cursor: pointer;
 }
 
 .prefer-section {
@@ -146,14 +150,21 @@ a {
 
 .prefer-h2 {
   font-family: "Tiempos Headline", serif;
-  font-weight: 300;
+  font-weight: normal;
   margin-top: 60px;
   padding-top: 60px;
+  font-size: 30px;
 }
 
 .prefer-p {
   font-family: Avenir, sans-serif;
   line-height: 2rem;
+  font-size: 18px;
+}
+
+.clinics {
+  font-family: Avenir, sans-serif;
+  font-size: 20px;
 }
 
 .about-info {
@@ -183,6 +194,7 @@ a {
 .foot-link {
   margin-right: 30px;
   color: #6e6e6e;
+  font-size: 18px;
 }
 
 .footer-section {
